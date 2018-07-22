@@ -1,4 +1,7 @@
 .idea
 vendor
-cache/twig/**
+
 composer.lock
+.DS_Store
+
+cache/twig/**
