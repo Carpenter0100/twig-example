@@ -9,7 +9,7 @@ $modulesDir = $baseDir . '/src';
 $appThemeDir = $baseDir . '/app/Theme';
 $pathToTemplates = [$modulesDir, $appThemeDir];
 
-$request = new \App\Http\Request();
+$request = new \App\Http\Request($_REQUEST);
 $templateEngine = new \App\Template\TemplateEngine($pathToTemplates, $templateCacheDir);
 $homePage = new \App\Home\Page\HomePage($templateEngine);
 
