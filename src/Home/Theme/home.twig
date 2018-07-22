@@ -1,0 +1,21 @@
+{% extends "layout.twig" %}
+
+{% block title %}
+    {{ hello }}
+{% endblock %}
+
+{% block content %}
+    <h1>{{ hello }}</h1>
+
+    <ul id="names">
+        {% for user in users %}
+            <li>{{ user.name }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <ul id="cars">
+        {% for car in cars %}
+            <li>{{ car }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
